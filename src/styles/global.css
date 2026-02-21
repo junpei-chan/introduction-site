@@ -133,7 +133,7 @@
 .body-16-bold {
   font-family: var(--font-zenmaru);
   font-size: var(--text-body-16);
-  font-weight: black;
+  font-weight: 900;
   line-height: var(--leading-16);
 }
 
@@ -154,7 +154,7 @@
 .body-14-bold {
   font-family: var(--font-zenmaru);
   font-size: var(--text-body-14);
-  font-weight: black;
+  font-weight: 900;
   line-height: var(--leading-14);
 }
 
