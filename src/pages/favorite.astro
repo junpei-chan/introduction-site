@@ -1,8 +1,32 @@
 ---
 import BaseLayout from "../layouts/base-layout.astro";
 import Header from "../components/shared/header.astro";
+import { FavoriteSection } from "../components/favorite/favorite-section";
+import { House } from "@lucide/astro";
 ---
 
 <BaseLayout title="favorite">
-  <Header></Header>
+  <Header />
+  <div class="w-screen h-120 flex justify-center items-center bg-[url('/images/favorite/title-bg-texture.svg')] bg-repeat bg-auto">
+    <div class="flex flex-col gap-5 items-center justify-center w-140 h-70 bg-[url('/images/favorite/center-title-bg-texture.svg')] bg-no-repeat bg-center">
+      <h1 class="heading-jiyucho-32 text-turquoise-blue-500">
+        好きなもの
+      </h1>
+      <div class="text-center heading-zenmaru-20 text-soft-black">
+        <p>私のお気に入りを集めています</p>
+        <p>たくさん見ていってね</p>
+      </div>
+    </div>
+  </div>
+  <FavoriteSection client:load />
+  <a
+    href="/"
+    class="flex gap-4 items-center justify-center body-16-medium text-turquoise-blue-500 w-78 h-14 mx-auto my-18 bg-off-white border-3 border-turquoise-blue-500 rounded-full"
+  >
+    <House 
+      size={20}
+      color="#54B9AC"
+    />
+    ホームに戻る
+  </a>
 </BaseLayout>
