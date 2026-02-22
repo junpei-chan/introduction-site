@@ -137,14 +137,14 @@
   line-height: var(--leading-16);
 }
 
-.body-16-Medium {
+.body-16-medium {
   font-family: var(--font-zenmaru);
   font-size: var(--text-body-16);
   font-weight: bold;
   line-height: var(--leading-16);
 }
 
-.body-16-Regular {
+.body-16-regular {
   font-family: var(--font-zenmaru);
   font-size: var(--text-body-16);
   font-weight: medium;
