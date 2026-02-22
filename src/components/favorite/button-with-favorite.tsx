@@ -1,12 +1,10 @@
 interface Props {
-  key: number;
   text: string;
   color: "turquoise-blue" | "mustard-yellow";
-  onClick?: () => void;
+  onClick: () => void;
 }
 
 export function ButtonWithFavorite({ 
-  key, 
   text, 
   color,
   onClick,
@@ -15,7 +13,6 @@ export function ButtonWithFavorite({
 
   return (
     <button
-      key={key}
       onClick={onClick}
       className={`
         flex items-center justify-center w-40 h-11 bg-off-white text-gray-800 body-16-medium rounded-lg cursor-pointer m-1.5
