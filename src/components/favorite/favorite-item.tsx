@@ -21,8 +21,7 @@ export function FavoriteItem({
       />
       <div
         className={`
-          flex flex-col gap-4 w-full h-full bg-off-white px-6 py-4 shadow-[4px_4px_4px_2px_rgba(98,162,153,0.25)]
-          hover:rotate-3 transition-all
+          flex flex-col gap-4 w-full h-full bg-off-white px-6 py-4 shadow-[4px_4px_4px_2px_rgba(98,162,153,0.25)] hover:rotate-3 transition-all whitespace-nowrap
           ${isWobbling ? "animate-wobble" : ""}
         `}
         onMouseLeave={() => setIsWobbling(true)}

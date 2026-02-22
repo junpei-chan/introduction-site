@@ -8,6 +8,12 @@
   font-display: swap;
 }
 
+@keyframes press {
+  0%   { transform: translateY(0);   box-shadow: 0 0 0 6px var(--press-color), 0 6px 0 6px var(--press-dark-color); }
+  40%  { transform: translateY(6px); box-shadow: 0 0 0 6px var(--press-color), 0 0   0 6px var(--press-dark-color); }
+  100% { transform: translateY(0);   box-shadow: 0 0 0 6px var(--press-color), 0 6px 0 6px var(--press-dark-color); }
+}
+
 @keyframes wobble {
   0%   { transform: rotate(2deg); }
   30%  { transform: rotate(-2deg); }
@@ -90,6 +96,7 @@
   --leading-12: 1.67;
 
   /* アニメーション */
+  --animate-press: press 0.25s ease-out;
   --animate-wobble: wobble 0.8s ease-in-out;
 }
 
