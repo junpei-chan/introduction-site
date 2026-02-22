@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": 1,
+    "imagePath": "/images/favorite/game/mother.png",
+    "name": "MOTHERシリーズ"
+  },
+  {
+    "id": 2,
+    "imagePath": "/images/favorite/game/chinkuru.jpg",
+    "name": "いろづきチンクルの恋のバルーントリップ"
+  },
+  {
+    "id": 3,
+    "imagePath": "/images/favorite/game/chinkuru.jpg",
+    "name": "もぎたてチンクルのばら色ルッピーランド"
+  }
+]
