@@ -2,17 +2,17 @@ import { useState } from "react";
 
 interface Props {
   text: string;
-  color: "turquoise-blue" | "mustard-yellow";
+  isActive: boolean;
   onClick: () => void;
 }
 
-export function ButtonWithFavorite({ 
-  text, 
-  color,
+export function ButtonWithFavorite({
+  text,
+  isActive,
   onClick,
 }: Props) {
   const [isAnimating, setIsAnimating] = useState(false);
-  const isBlue = color === "turquoise-blue";
+  const isBlue = !isActive;
 
   const handleClick = () => {
     onClick();

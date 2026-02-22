@@ -9,7 +9,6 @@ export function FavoriteItem({
   imagePath,
   name,
 }: Props) {
-  const isPing = imagePath.slice(-3) === "png";
   const [isWobbling, setIsWobbling] = useState(false);
 
   return (
@@ -29,10 +28,7 @@ export function FavoriteItem({
       >
         <div
           style={{ backgroundImage: `url('${imagePath}')` }}
-          className={`
-            w-full h-36 rounded-lg bg-no-repeat bg-center bg-cover
-            ${isPing && "border-gray-500 border-2"}
-          `}
+          className="w-full h-36 rounded-lg bg-no-repeat bg-center bg-cover border-gray-500 border-2"
         />
         <p>{name}</p>
         <svg width="100%" height="4">

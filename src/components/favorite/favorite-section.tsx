@@ -4,26 +4,22 @@ import { FavoriteList } from "./favorite-list";
 
 export function FavoriteSection() {
   const [favoriteGenre, setFavoriteGenre] = useState("食べもの");
+  const [activeButton, setActiveButton] = useState("食べもの");
   const genreButtontexts = ["食べもの", "カラー・デザイン", "ゲーム", "キャラクター", "エンタメ", "好みのタイプ", "その他"];
 
   const renderButtons = (buttons: string[], offset: number) =>
-    buttons.map((button, i) => {
-      const color = (offset + i + 1) % 2 === 0
-        ? "mustard-yellow"
-        : "turquoise-blue";
+    buttons.map((button, i) => (
+      <ButtonWithFavorite
+        key={offset + i}
+        text={button}
+        isActive={button === activeButton}
+        onClick={() => handleGenreClick(button)}
+      />
+    ));
 
-      return (
-        <ButtonWithFavorite
-          key={offset + i}
-          text={button}
-          color={color}
-          onClick={() => handleGenreClick(button)}
-        />
-      );
-    });
-
-  const handleGenreClick = (title: string) => {
-    if (title === "好みのタイプ") title = "タイプ";
+  const handleGenreClick = (button: string) => {
+    setActiveButton(button);
+    const title = button === "好みのタイプ" ? "タイプ" : button;
     setFavoriteGenre(title);
   }
 
