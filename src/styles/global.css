@@ -8,6 +8,14 @@
   font-display: swap;
 }
 
+@keyframes wobble {
+  0%   { transform: rotate(2deg); }
+  30%  { transform: rotate(-2deg); }
+  60%  { transform: rotate(1.5deg); }
+  80%  { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
 @theme inline {
   --color-*: initial;
 
@@ -80,6 +88,9 @@
   --leading-16: 1.5;
   --leading-14: 1.57;
   --leading-12: 1.67;
+
+  /* アニメーション */
+  --animate-wobble: wobble 0.8s ease-in-out;
 }
 
 /* ========== ↓ テキストスタイル（見出し） ↓ ========== */
