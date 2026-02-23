@@ -8,6 +8,20 @@
   font-display: swap;
 }
 
+@keyframes press {
+  0%   { transform: translateY(0);   box-shadow: 0 0 0 6px var(--press-color), 0 6px 0 6px var(--press-dark-color); }
+  40%  { transform: translateY(6px); box-shadow: 0 0 0 6px var(--press-color), 0 0   0 6px var(--press-dark-color); }
+  100% { transform: translateY(0);   box-shadow: 0 0 0 6px var(--press-color), 0 6px 0 6px var(--press-dark-color); }
+}
+
+@keyframes wobble {
+  0%   { transform: rotate(2deg); }
+  30%  { transform: rotate(-2deg); }
+  60%  { transform: rotate(1.5deg); }
+  80%  { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
 @theme inline {
   --color-*: initial;
 
@@ -80,6 +94,10 @@
   --leading-16: 1.5;
   --leading-14: 1.57;
   --leading-12: 1.67;
+
+  /* アニメーション */
+  --animate-press: press 0.25s ease-out;
+  --animate-wobble: wobble 0.8s ease-in-out;
 }
 
 /* ========== ↓ テキストスタイル（見出し） ↓ ========== */
@@ -137,14 +155,14 @@
   line-height: var(--leading-16);
 }
 
-.body-16-Medium {
+.body-16-medium {
   font-family: var(--font-zenmaru);
   font-size: var(--text-body-16);
   font-weight: bold;
   line-height: var(--leading-16);
 }
 
-.body-16-Regular {
+.body-16-regular {
   font-family: var(--font-zenmaru);
   font-size: var(--text-body-16);
   font-weight: medium;

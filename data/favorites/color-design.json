@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "imagePath": "/images/favorite/design/princess.png",
+    "name": "お姫さま"
+  },
+  {
+    "id": 2,
+    "imagePath": "/images/favorite/design/huwa.png",
+    "name": "ふわふわ"
+  },
+  {
+    "id": 3,
+    "imagePath": "/images/favorite/design/toy-box.png",
+    "name": "おもちゃ箱"
+  },
+  {
+    "id": 4,
+    "imagePath": "/images/favorite/design/cute.png",
+    "name": "かわいい系"
+  },
+  {
+    "id": 5,
+    "imagePath": "/images/favorite/design/sponge-cake.png",
+    "name": "スポンジケーキの黄色"
+  },
+  {
+    "id": 6,
+    "imagePath": "/images/favorite/design/salmon-pink.jpg",
+    "name": "サーモンピンク"
+  }
+]
