@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "id": 1,
+    "imagePath": "/images/favorite/other/kids.png",
+    "name": "子供向けのもの"
+  },
+  {
+    "id": 2,
+    "imagePath": "/images/favorite/other/book-reading.png",
+    "name": "読書感想文"
+  },
+  {
+    "id": 3,
+    "imagePath": "/images/favorite/other/event.png",
+    "name": "イベント事"
+  },
+  {
+    "id": 4,
+    "imagePath": "/images/favorite/other/with-mather.png",
+    "name": "おかあさんといっしょ"
+  },
+  {
+    "id": 5,
+    "imagePath": "/images/favorite/other/mail.png",
+    "name": "お手紙"
+  },
+  {
+    "id": 6,
+    "imagePath": "/images/favorite/other/happy.png",
+    "name": "好きな言葉は\n「楽しいな」"
+  },
+  {
+    "id": 7,
+    "imagePath": "/images/favorite/other/art.png",
+    "name": "びじゅチューン"
+  },
+  {
+    "id": 8,
+    "imagePath": "/images/favorite/other/yokai.png",
+    "name": "妖怪"
+  },
+  {
+    "id": 9,
+    "imagePath": "/images/favorite/other/aliens.png",
+    "name": "宇宙人"
+  },
+  {
+    "id": 10,
+    "imagePath": "/images/favorite/other/kokugo.png",
+    "name": "好きな教科は\n国語"
+  }
+]
