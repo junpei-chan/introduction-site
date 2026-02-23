@@ -25,7 +25,7 @@ export function FavoriteSection() {
 
   return (
     <section>
-      <div className="flex flex-col items-center gap-y-4 my-18">
+      <div className="flex flex-col items-center gap-y-4 mb-18">
         <div className="flex gap-x-4">
           {renderButtons(genreButtontexts.slice(0, 4), 0)}
         </div>
