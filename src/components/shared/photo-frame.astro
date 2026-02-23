@@ -7,6 +7,7 @@ interface Props {
   text: string;
   className?: string;
 }
+
 const { tapePosition, imagePath, text, className } = Astro.props;
 
 const tapeType = tapePosition === "center" 
@@ -36,7 +37,7 @@ const tapeStyle = tapePosition === "left"
       src={`/images/nakayama/${imagePath}`}
       alt={text}
       width={160}
-      height={200}
+      height={160}
       class="rounded-lg"
     />
     <p class="heading-jiyucho-20 text-turquoise-blue-500 text-center">
