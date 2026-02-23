@@ -30,7 +30,7 @@ export function FavoriteItem({
           style={{ backgroundImage: `url('${imagePath}')` }}
           className="w-full flex-1 min-h-0 rounded-lg bg-no-repeat bg-center bg-cover border-gray-500 border-2"
         />
-        <p className="line-clamp-2">{name}</p>
+        <p className="line-clamp-2 whitespace-pre-line">{name}</p>
         <svg width="100%" height="4">
           <line
             x1="0" y1="2" x2="100%" y2="2"
