@@ -25,4 +25,6 @@ pnpm-debug.log*
 
 .vscode/
 
+# private images
+public/images/private/
 /public/images/nakayama/
