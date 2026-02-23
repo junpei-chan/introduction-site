@@ -130,6 +130,15 @@
   line-height: var(--leading-32);
 }
 
+/* タイトルのサイズ調整　こうしないとできないんですよ〜help me〜*/
+.heading-jiyucho-32 .big {
+  font-size: var(--text-heading-32);
+}
+
+.heading-jiyucho-32 .small {
+  font-size: var(--text-heading-24);
+}
+
 .heading-zenmaru-24 {
   font-family: var(--font-zenmaru);
   font-size: var(--text-heading-24);
