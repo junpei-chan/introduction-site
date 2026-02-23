@@ -27,3 +27,4 @@ pnpm-debug.log*
 
 # private images
 public/images/private/
+/public/images/nakayama/

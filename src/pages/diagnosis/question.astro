@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../../layouts/base-layout.astro";
+import Header from "../../components/shared/header.astro";
+import Image from "astro/components/Image.astro";
+import { DiagnosisQuestions } from "../../components/diagnosis/diagnosis-questions";
+---
+
+<BaseLayout title="question">
+  <Header />
+  <Image 
+    src="/images/nakayama/key-folder.png"
+    alt=""
+    width={300}
+    height={400}
+    class="fixed top-0"
+  />
+  <div class="flex items-start justify-center pt-3 w-121 h-27 bg-[url('/images/diagnosis/diagnosis-title.png')] bg-center bg-no-repeat mx-auto mt-14 mb-24">
+    <h1 class="text-soft-black heading-zenmaru-32">
+      診断スタート
+    </h1>
+  </div>
+  <DiagnosisQuestions client:load />
+</BaseLayout>

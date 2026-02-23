@@ -17,11 +17,14 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
 		<title>{title}</title>
 	</head>
-	<body class="pt-22 bg-[url('/images/global/texture/page-bg-texture.png')] bg-repeat bg-auto">
-		<slot />
+	<body class="relative w-full min-h-screen pt-22 flex flex-col bg-[url('/images/global/texture/page-bg-texture.png')] bg-repeat bg-auto">
+		<div class="flex-1">
+			<slot />
+		</div>
 		<footer class="w-screen flex justify-center items-center h-8 bg-off-white body-14-medium text-turquoise-blue-500">
 			© Team DV
 		</footer>

@@ -1,0 +1,10 @@
+---
+import BaseLayout from "../../layouts/base-layout.astro";
+import Header from "../../components/shared/header.astro";
+import { DiagnosisResult } from "../../components/diagnosis/diagnosis-result";
+---
+
+<BaseLayout title="result">
+  <Header />
+  <DiagnosisResult client:load />
+</BaseLayout>
