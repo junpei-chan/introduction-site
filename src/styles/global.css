@@ -9,17 +9,42 @@
 }
 
 @keyframes press {
-  0%   { transform: translateY(0);   box-shadow: 0 0 0 6px var(--press-color), 0 6px 0 6px var(--press-dark-color); }
-  40%  { transform: translateY(6px); box-shadow: 0 0 0 6px var(--press-color), 0 0   0 6px var(--press-dark-color); }
-  100% { transform: translateY(0);   box-shadow: 0 0 0 6px var(--press-color), 0 6px 0 6px var(--press-dark-color); }
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 6px var(--press-color), 0 6px 0 6px var(--press-dark-color);
+  }
+
+  40% {
+    transform: translateY(6px);
+    box-shadow: 0 0 0 6px var(--press-color), 0 0 0 6px var(--press-dark-color);
+  }
+
+  100% {
+    transform: translateY(0);
+    box-shadow: 0 0 0 6px var(--press-color), 0 6px 0 6px var(--press-dark-color);
+  }
 }
 
 @keyframes wobble {
-  0%   { transform: rotate(2deg); }
-  30%  { transform: rotate(-2deg); }
-  60%  { transform: rotate(1.5deg); }
-  80%  { transform: rotate(-1deg); }
-  100% { transform: rotate(0deg); }
+  0% {
+    transform: rotate(2deg);
+  }
+
+  30% {
+    transform: rotate(-2deg);
+  }
+
+  60% {
+    transform: rotate(1.5deg);
+  }
+
+  80% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @theme inline {
@@ -214,3 +239,71 @@
 }
 
 /* ======================================= */
+
+.wave-path {
+  animation: waveMorph 5s ease-in-out infinite alternate;
+}
+
+@keyframes waveMorph {
+  0% {
+    d: path("M1279.5 311.819H0V1.79 ...");
+  }
+
+  100% {
+    d: path("M1279.5 311.819H0V10 ...少しカーブ変えた値...");
+  }
+}
+
+/* 花 回転＋拡大縮小 */
+
+@keyframes flowerSpinScale {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(18deg) scale(1.25);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.flower-spin-scale {
+  animation: flowerSpinScale 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.flower-delay-1 {
+  animation-delay: 0.5s;
+}
+
+.flower-delay-2 {
+  animation-delay: 1s;
+}
+
+@keyframes floatWave {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.wave-4s { animation: floatWave 4s ease-in-out infinite; }
+.wave-6s { animation: floatWave 6s ease-in-out infinite reverse; }
+.wave-8s { animation: floatWave 8s ease-in-out infinite; }
+
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
