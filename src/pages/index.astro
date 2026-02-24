@@ -12,7 +12,15 @@ import MessageSection from "../components/top/message/message-section.astro";
 <BaseLayout title="Nana First">
 	<Header />
 
-	<HeroSection />
+	<div class="relative">
+		<HeroSection />
+
+		<img
+			src="/images/global/texture/bg-wave.svg"
+			alt=""
+			class="absolute -bottom-85 left-0 w-full z-0"
+		/>
+	</div>
 	<AboutSection />
 	<ProfileSection />
 	<HobbySection />
