@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/base-layout.astro";
 import Header from "../components/shared/header.astro";
+import Image from "astro/components/Image.astro";
 
 import HeroSection from "../components/top/hero-section.astro";
 import AboutSection from "../components/top/about/about-section.astro";
@@ -12,9 +13,65 @@ import MessageSection from "../components/top/message/message-section.astro";
 <BaseLayout title="Nana First">
 	<Header />
 
-	<HeroSection />
-	<AboutSection />
-	<ProfileSection />
-	<HobbySection />
-	<MessageSection />
+	<div class="relative">
+		<HeroSection />
+		<AboutSection />
+		<ProfileSection />
+		<HobbySection />
+		<MessageSection />
+		<div class="w-30 h-30 relative -top-950 -right-300">
+			<Image 
+				src="/images/global/texture/flower-1.svg"
+				alt=""
+				width={80}
+				height={56}
+				class="absolute left-0"
+			/>
+			<Image 
+				src="/images/global/texture/flower-1.svg"
+				alt=""
+				width={80}
+				height={56}
+				class="absolute right-0 bottom-0"
+			/>
+		</div>
+		<span class="absolute top-400 block w-screen h-140 bg-[url('/images/global/texture/under-bg3.svg')] bg-no-repeat bg-cover bg-center" />
+		<Image 
+			src="/images/nakayama/huku.png"
+			alt=""
+			width={256}
+			height={208}
+			class="absolute top-410 right-4"
+		/>
+		<Image 
+			src="/images/global/texture/pink-katamimi.svg"
+			alt=""
+			width={88}
+			height={240}
+			class="absolute bottom-500"
+		/>
+		<span class="absolute bottom-420 block w-screen h-72 bg-[url('/images/global/texture/under-bg2.svg')] bg-no-repeat bg-cover -z-10" />
+		<div class="absolute bottom-180 left-10">
+			<Image
+				src="/images/global/texture/flower-4.svg"
+				alt=""
+				width={108}
+				height={88}
+			/>
+			<Image
+				src="/images/global/texture/flower-5.svg"
+				alt=""
+				width={88}
+				height={56}
+			/>
+		</div>
+		<Image
+			src="/images/nakayama/kotti-minna.png"
+			alt="こっち見んな♡"
+			width={240}
+			height={104}
+			class="absolute right-10"
+		/>
+		<span class="block w-screen h-75 bg-[url('/images/global/texture/under-bg1.svg')] bg-no-repeat bg-cover" />
+	</div>
 </BaseLayout>
