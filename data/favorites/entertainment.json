@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "imagePath": "/images/favorite/entertainment/book.png",
+    "name": "世界地図の下書き\n（朝井リョウ）"
+  },
+  {
+    "id": 2,
+    "imagePath": "/images/favorite/entertainment/book.png",
+    "name": "きみのともだち\n（重松清）"
+  },
+  {
+    "id": 3,
+    "imagePath": "/images/favorite/entertainment/book.png",
+    "name": "マリリン・トールド・ミー\n（山内マリコ）"
+  },
+  {
+    "id": 4,
+    "imagePath": "/images/favorite/entertainment/book.png",
+    "name": "僕と先生\n（坂木司）"
+  },
+  {
+    "id": 5,
+    "imagePath": "/images/favorite/entertainment/book.png",
+    "name": "たまごのはなし\n（しおたにまみこ）"
+  },
+  {
+    "id": 6,
+    "imagePath": "/images/favorite/entertainment/film.jpg",
+    "name": "グッバイ、ドン・グリーズ!"
+  },
+  {
+    "id": 7,
+    "imagePath": "/images/favorite/entertainment/film.jpg",
+    "name": "漁港の肉子ちゃん"
+  },
+  {
+    "id": 8,
+    "imagePath": "/images/favorite/entertainment/film.jpg",
+    "name": "コララインとボタンの魔女"
+  }
+]

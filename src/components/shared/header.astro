@@ -1,0 +1,51 @@
+---
+import Image from "astro/components/Image.astro";
+import { Star, Heart } from "@lucide/astro";
+---
+
+<header class="fixed top-0 bg-white flex w-screen justify-end px-30 shadow-[0_2px_5px_-2px_rgba(0,0,0,0.25)] z-50">
+  <!-- <a 
+    href="/"
+    class="flex items-center justify-center w-30 h-22 bg-gray-200"
+  >
+    <Image 
+      src="/logo.png"
+      alt="Nana First"
+      width={120}
+      height={88}
+    />
+    ロゴ
+  </a> -->
+  <nav>
+    <ul 
+      class="
+        flex gap-5
+        [&>li]:w-30 [&>li]:h-22 [&>li]:border-b-3 [&>li]:cursor-pointer
+        [&_a]:w-full [&_a]:h-full [&_a]:flex [&_a]:flex-col [&_a]:justify-between [&_a]:items-center [&_a]:py-3
+      "
+    >
+      <li class="text-turquoise-blue-500 border-turquoise-blue-600">
+        <a href="/favorite">
+          <Star
+            size={32}
+            color="#54B9AC"
+          />
+          <span class="body-16-bold">
+            好きなもの
+          </span>
+        </a>
+      </li>
+      <li class="text-mustard-yellow-500 border-mustard-yellow-600">
+        <a href="/diagnosis">
+          <Heart
+            size={32}
+            color="#D8D524"
+          />
+          <span class="body-16-bold">
+            相性診断
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

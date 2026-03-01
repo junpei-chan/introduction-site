@@ -1,0 +1,69 @@
+---
+import HobbyCard from "./hobby-card.astro";
+---
+
+<section class="relative pt-10 pb-40 overflow-hidden">
+    <div class="flex flex-col items-center gap-3 mb-16">
+        <h2 class="heading-zenmaru-32 text-soft-black">趣味</h2>
+
+        <div class="flex items-center gap-6">
+            <img
+                src="/images/top/hobby/leaf_left.svg"
+                alt=""
+                class="relative -top-7 w-32 opacity-80"
+            />
+            <p class="body-14-regular text-soft-black">HOBBY</p>
+
+            <img
+                src="/images/top/hobby/leaf_right.svg"
+                alt=""
+                class="relative -top-7 w-32 opacity-80"
+            />
+        </div>
+    </div>
+
+    <div class="relative w-240 h-100 mx-auto fade-up about-card">
+        <img
+            src="/images/top/hobby/Frame_hobby.png"
+            class="absolute inset-0 w-full h-full object-contain"
+        />
+
+        <HobbyCard
+            image="/images/top/hobby/comedian.svg"
+            title="お笑い"
+            rotate="rotate-[-8deg]"
+            position="left-[170px] top-[60px]"
+        />
+
+        <HobbyCard
+            image="/images/top/hobby/movie.svg"
+            title="映画"
+            rotate="rotate-[6deg]"
+            position="right-[180px] top-[90px]"
+        />
+    </div>
+
+    <div class="text-center mt-16">
+        <p class="heading-zenmaru-20 text-soft-black mb-6">
+            私の好きなものには、他にも…
+        </p>
+
+        <a
+            href="/favorite"
+            class="flex items-center justify-center gap-3
+                    w-78 h-13.75
+                    mx-auto
+                    rounded-full
+                    bg-turquoise-blue-100
+                    border-2 border-turquoise-blue-500
+                    text-turquoise-blue-500
+                    body-16-medium
+                    transition duration-300
+                    hover:bg-turquoise-blue-500
+                    hover:text-white"
+        >
+            もっと見る
+            <span>→</span>
+        </a>
+    </div>
+</section>

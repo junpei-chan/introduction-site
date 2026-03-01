@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../../layouts/base-layout.astro";
+import Image from "astro/components/Image.astro";
+import Header from "../../components/shared/header.astro";
+import PhotoFrame from "../../components/shared/photo-frame.astro";
+import { MoveRight } from "@lucide/astro";
+---
+
+<BaseLayout title="diagnosis">
+  <Header />
+  <div class="relative min-h-screen mt-12">
+    <section
+      class="
+        flex flex-col items-center gap-14 w-130 mx-auto text-center
+      "
+    >
+      <div class="flex flex-col gap-14 w-full border-y-4 py-10 border-[#C5B4A5] text-[#43362E]">
+        <h1 class="font-zenmaru font-bold text-[42px]">
+          相性診断
+        </h1>
+        <div class="heading-zenmaru-20">
+          <p>あなたと中山さんの距離を</p>
+          <p>そっと測ります。</p>
+        </div>
+      </div>
+      <a
+        href="/diagnosis/question"
+        class="relative flex justify-center items-center body-16-bold w-79 h-14 bg-off-white border-3 text-turquoise-blue-500 border-turquoise-blue-500 rounded-full"
+      >
+        はじめる
+        <MoveRight
+          size={20}
+          color="#54B9AC"
+          class="absolute right-8"
+        />
+      </a>
+    </section>
+    <PhotoFrame
+      tapePosition="left"
+      imagePath="snowball.jpeg"
+      text="雪合戦。"
+      className="absolute top-20 left-20 -rotate-10"
+    />
+    <PhotoFrame
+      tapePosition="center"
+      imagePath="anpanman.jpeg"
+      text="たくさん寝てます！"
+      className="absolute top-100 left-90 -rotate-6"
+    />
+    <PhotoFrame
+      tapePosition="left"
+      imagePath="meshi.jpeg"
+      text="こっちみんな♡"
+      className="absolute top-100 right-90 rotate-10"
+    />
+    <PhotoFrame
+      tapePosition="right"
+      imagePath="circle.jpeg"
+      text="あそぼ！"
+      className="absolute top-30 right-20 rotate-4"
+    />
+    <Image 
+      src="/images/global/heart.svg"
+      alt=""
+      width={104}
+      height={104}
+      class="absolute -top-4 right-30"
+    />
+    <Image 
+      src="/images/global/heart.svg"
+      alt=""
+      width={104}
+      height={104}
+      class="absolute top-130 left-50 -rotate-40"
+    />
+    <Image 
+      src="/images/global/texture/bg-texture1.svg"
+      alt=""
+      width={320}
+      height={100}
+      class="absolute -top-12"
+    />
+    <span class="absolute bottom-0 block w-screen h-45 bg-[url('/images/global/texture/under-bg1.svg')] bg-no-repeat bg-center bg-cover" />
+  </div>
+</BaseLayout>

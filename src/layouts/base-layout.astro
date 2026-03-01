@@ -1,0 +1,55 @@
+---
+import "../styles/global.css";
+import { ArrowUp } from "@lucide/astro";
+
+interface Props {
+	title: string;
+}
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+		<title>{title}</title>
+	</head>
+	<body class="relative w-full min-h-screen pt-22 flex flex-col bg-[url('/images/global/texture/page-bg-texture.png')] bg-repeat bg-auto">
+		<div class="flex-1">
+			<slot />
+		</div>
+		<footer class="w-screen flex justify-center items-center h-8 bg-off-white body-14-medium text-turquoise-blue-500">
+			© Team DV
+		</footer>
+		<button
+			id="scroll-to-top"
+			aria-label="ページ上部に戻る"
+			class="fixed bottom-12 right-8 z-50 flex items-center justify-center w-12 h-12 rounded-full bg-off-white border-2 border-turquoise-blue-500 text-turquoise-blue-500 shadow-md opacity-0 pointer-events-none transition-opacity duration-300"
+		>
+			<ArrowUp size={22} />
+		</button>
+		<script>
+			const btn = document.getElementById("scroll-to-top");
+			window.addEventListener("scroll", () => {
+				if (window.scrollY > 300) {
+					btn?.classList.remove("opacity-0", "pointer-events-none");
+					btn?.classList.add("opacity-100");
+				} else {
+					btn?.classList.add("opacity-0", "pointer-events-none");
+					btn?.classList.remove("opacity-100");
+				}
+			});
+			btn?.addEventListener("click", () => {
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "imagePath": "/images/favorite/food/shirako.jpg",
+    "name": "白子"
+  },
+  {
+    "id": 2,
+    "imagePath": "/images/favorite/food/hormon.png",
+    "name": "ホルモン"
+  },
+  {
+    "id": 3,
+    "imagePath": "/images/favorite/food/spicy-food.png",
+    "name": "辛いもの"
+  },
+  {
+    "id": 4,
+    "imagePath": "/images/favorite/food/taratara.png",
+    "name": "タラタラしてんじゃねーよ"
+  },
+  {
+    "id": 5,
+    "imagePath": "/images/favorite/food/mont-blanc.png",
+    "name": "モンブラン"
+  },
+  {
+    "id": 6,
+    "imagePath": "/images/favorite/food/alcohol.jpg",
+    "name": "お酒"
+  },
+  {
+    "id": 7,
+    "imagePath": "/images/favorite/food/osyaburi-konbu.png",
+    "name": "おしゃぶり昆布"
+  },
+  {
+    "id": 8,
+    "imagePath": "/images/favorite/food/cream.png",
+    "name": "生クリーム"
+  },
+  {
+    "id": 9,
+    "imagePath": "/images/favorite/food/tougarashi-tane.png",
+    "name": "唐辛子の種"
+  },
+  {
+    "id": 10,
+    "imagePath": "/images/favorite/food/motsunabe.png",
+    "name": "モツ鍋"
+  },
+  {
+    "id": 11,
+    "imagePath": "/images/favorite/food/salmon.png",
+    "name": "サーモン"
+  },
+  {
+    "id": 12,
+    "imagePath": "/images/favorite/food/gomadouhu.png",
+    "name": "ごま豆腐"
+  },
+  {
+    "id": 13,
+    "imagePath": "/images/favorite/food/fried-potato.png",
+    "name": "フライドポテト"
+  }
+]

@@ -1,0 +1,88 @@
+---
+interface Props {
+    image: string;
+    title: string;
+    highlight: string;
+    text: string;
+    color: "turquoise" | "yellow" | "pink";
+    link: string;
+}
+
+const { image, title, highlight, text, color, link } = Astro.props;
+const restTitle = title.replace(highlight, "");
+
+const colorMap = {
+    turquoise: {
+        title: "text-turquoise-blue-500",
+        button: "text-turquoise-blue-600 border-turquoise-blue-600 hover:bg-turquoise-blue-600 hover:text-white",
+        buttonBg: "bg-beige-100",
+    },
+    yellow: {
+        title: "text-mustard-yellow-500",
+        button: "text-mustard-yellow-600 border-mustard-yellow-600 hover:bg-mustard-yellow-600 hover:text-white",
+        buttonBg: "bg-beige-100",
+    },
+    pink: {
+        title: "text-[#EA7AC1]",
+        button: "text-[#EA7AC1] border-[#EA7AC1] hover:bg-[#EA7AC1] hover:text-white",
+        buttonBg: "bg-beige-100",
+    },
+}[color];
+---
+
+<div
+    class="w-72.5 rounded-[10px] border-10 border-white shadow-[0_8px_20px_rgba(0,0,0,0.06)]"
+>
+    <div class="rounded-md border-2 border-dashed border-[#C9CED3]">
+        <div
+            class="rounded-md bg-[#E4F1EF] px-6 pt-6 pb-8 flex flex-col items-center text-center"
+        >
+            <img
+                src={image}
+                alt=""
+                class="w-70 -mt-4 mb-4 drop-shadow-[0_6px_12px_rgba(0,0,0,0.08)]"
+            />
+
+            <!-- タイトル -->
+            <h3
+                class={`mb-2 ${colorMap.title} heading-jiyucho-32 leading-none`}
+            >
+                <span class="big">{highlight}</span><span class="small"
+                    >{restTitle}</span
+                >
+            </h3>
+
+            <p
+                class="body-16-medium text-soft-black leading-relaxed mb-8 whitespace-pre-line"
+            >
+                {text}
+            </p>
+
+            <a
+                href={link}
+                class={`mt-auto body-14-bold w-54 h-10 flex items-center justify-center rounded-full border-[3px] transition duration-200 ${colorMap.button} ${colorMap.buttonBg}`}
+            >
+                詳しく見る →
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const elements = document.querySelectorAll(".fade-up");
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        },
+        {
+            threshold: 0.2,
+        },
+    );
+
+    elements.forEach((el) => observer.observe(el));
+</script>

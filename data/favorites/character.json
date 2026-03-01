@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "imagePath": "/images/favorite/character/akachan-boku.png",
+    "name": "森口仁志\n（赤ちゃんと僕）"
+  },
+  {
+    "id": 2,
+    "imagePath": "/images/favorite/character/aporo.png",
+    "name": "アポロちゃん"
+  },
+  {
+    "id": 3,
+    "imagePath": "/images/favorite/character/harehare-kun.png",
+    "name": "ハレハレ君\n（コジコジ）"
+  },
+  {
+    "id": 4,
+    "imagePath": "/images/favorite/character/kaiketsu-zorori.png",
+    "name": "かいけつゾロリ"
+  },
+  {
+    "id": 5,
+    "imagePath": "/images/favorite/character/kazamakun.png",
+    "name": "風間くん\n(クレヨンしんちゃん)"
+  },
+  {
+    "id": 6,
+    "imagePath": "/images/favorite/character/korasyo.png",
+    "name": "コラショ"
+  },
+  {
+    "id": 7,
+    "imagePath": "/images/favorite/character/mametti.png",
+    "name": "まめっち"
+  },
+  {
+    "id": 8,
+    "imagePath": "/images/favorite/character/maru-chan.png",
+    "name": "まるちゃん\n（ちびまる子ちゃん）"
+  }
+]

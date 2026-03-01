@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/base-layout.astro";
+import Header from "../components/shared/header.astro";
+import { FavoriteSection } from "../components/favorite/favorite-section";
+import { House } from "@lucide/astro";
+---
+
+<BaseLayout title="favorite">
+  <Header />
+  <div class="w-screen h-120 flex justify-center items-center bg-[url('/images/favorite/title-bg-texture.svg')] bg-repeat bg-auto">
+    <div class="flex flex-col gap-5 items-center justify-center w-140 h-70 bg-[url('/images/favorite/center-title-bg-texture.svg')] bg-no-repeat bg-center">
+      <h1 class="heading-jiyucho-32 text-turquoise-blue-500">
+        好きなもの
+      </h1>
+      <div class="text-center heading-zenmaru-20 text-soft-black">
+        <p>私のお気に入りを集めています</p>
+        <p>たくさん見ていってね</p>
+      </div>
+    </div>
+  </div>
+  <div class="relative pt-18">
+    <span class="absolute top-0 left-0 block w-79 h-30 bg-[url('/images/global/texture/bg-texture1.svg')] bg-no-repeat bg-center" />
+    <span class="absolute top-30 left-39 block w-20 h-32 rotate-200 bg-[url('/images/global/texture/flower-2.svg')] bg-no-repeat bg-center bg-cover" />
+    <span class="absolute block top-47 left-60 w-16 h-16 bg-[url('/images/global/texture/flower-3.svg')] bg-no-repeat bg-center bg-cover" />
+    <span class="absolute block top-40 right-61 w-18 h-18 bg-[url('/images/global/texture/flower-1.svg')]" />
+    <span class="absolute block top-29 right-44 w-18 h-18 rotate-60 scale-85 bg-[url('/images/global/texture/flower-1.svg')]" />
+    <span class="absolute block bottom-0 right-10 -scale-x-100 w-40 h-60 rotate-15 bg-[url('/images/global/katamimi-usagi.png')] bg-center bg-no-repeat bg-cover z-20" />
+    <span class="absolute block w-screen h-80 bottom-0 bg-[url('/images/global/texture/under-bg1.svg')] bg-center bg-cover -z-10" />
+    <FavoriteSection client:load />
+    <a
+      href="/"
+      class="flex gap-4 items-center justify-center body-16-medium text-turquoise-blue-500 w-78 h-14 mx-auto my-18 bg-off-white border-3 border-turquoise-blue-500 rounded-full"
+    >
+      <House
+        size={20}
+        color="#54B9AC"
+      />
+      ホームに戻る
+    </a>
+  </div>
+</BaseLayout>

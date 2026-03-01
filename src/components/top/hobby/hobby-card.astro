@@ -1,0 +1,23 @@
+---
+const { image, title, rotate, position } = Astro.props;
+---
+
+<div class={`absolute ${position} ${rotate}`}>
+    <div class="relative w-65">
+        <img
+            src="/images/global/pin.svg"
+            class="absolute -top-4 left-[48%] -translate-x-1/2 w-5 z-20"
+        />
+
+        <div class="bg-white rounded-xl shadow-xl p-4 flex flex-col items-center" >
+            <img src={image} class="rounded-lg w-full" />
+
+            <p class="mt-3 text-turquoise-blue-500 heading-jiyucho-20">
+                {title}
+            </p>
+
+            <div class="border-b-2 border-dashed border-[#9CC5C1] mt-3 w-full">
+            </div>
+        </div>
+    </div>
+</div>

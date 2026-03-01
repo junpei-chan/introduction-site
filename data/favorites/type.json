@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "imagePath": "/images/favorite/type/glasses.png",
+    "name": "メガネ"
+  },
+  {
+    "id": 2,
+    "imagePath": "/images/favorite/type/shikkari.png",
+    "name": "しっかりした人"
+  },
+  {
+    "id": 3,
+    "imagePath": "/images/favorite/type/glasses.png",
+    "name": "のび太みたいな人"
+  },
+  {
+    "id": 4,
+    "imagePath": "/images/favorite/type/sukippa.png",
+    "name": "すきっ歯"
+  }
+]
